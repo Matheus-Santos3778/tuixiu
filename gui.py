@@ -3,37 +3,37 @@ from task_manager import run_task
 
 TASKS = {
     "": {
-        "key": "padrao",
+        "key": "standard",
         "inputs": []
     },
     "Criar Usuário": {
-        "key": "criar",
+        "key": "create",
         "inputs": ["Nome Completo", "Email", "Usuario Espelho",
                    {"label": "Espelhar Agenda", "type": "checkbox"}]
     },
     "Resetar Usuário": {
-        "key": "resetar",
+        "key": "reset",
         "inputs": ["Usuario", "Base SOC"]
     },
     "Inativar Usuário": {
-        "key": "inativar",
+        "key": "inactivate",
         "inputs": ["Usuario", "Base SOC"]
     },
     "Espelhar Usuário": {
-        "key": "espelhar",
+        "key": "copycat",
         "inputs": ["Usuario", "Usuario Espelho", "Base SOC", 
                    {"label": "Acessos", "type": "checkbox"}, 
                    {"label": "Empresas", "type": "checkbox"}, 
                    {"label": "Agenda", "type": "checkbox"}]
     },
     "Coletar Deduplicador": {
-        "key": "deduplicador_data",
+        "key": "dedup_data",
         "inputs": ["Codigo Empresa", 
                    {"label": "Completo", "type": "checkbox"}]
         
     },
     "Rodar Deduplicador": {
-        "key": "deduplicador_run",
+        "key": "dedup_run",
         "inputs": ["Codigo Empresa"]
     },
     "Validador Matricula": {
